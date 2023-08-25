@@ -1,8 +1,16 @@
 {
   "name": "ophiuchusdl",
-  "version": "0.0.1",
+  "version": "0.4.0",
   "license": "GPL-3.0-or-later",
-  "Author": "Rizky",
+  "author": "Rizky",
+  "description": "Downloader with JavaScript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizxyu/OphiuchusDL.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rizxyu/OphiuchusDL/issues"
+  },
   "dependencies": {
     "chalk": "^5.3.0",
     "fs": "^0.0.1-security",
