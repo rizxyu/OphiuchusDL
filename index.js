@@ -1,1 +1,88 @@
-const _0x180027=_0x1d0c;function _0x1d0c(_0x516478,_0x213fb0){const _0x585905=_0x5859();return _0x1d0c=function(_0x1d0cbe,_0x2a5651){_0x1d0cbe=_0x1d0cbe-0x152;let _0x50c203=_0x585905[_0x1d0cbe];return _0x50c203;},_0x1d0c(_0x516478,_0x213fb0);}(function(_0x76f879,_0x5ef9d6){const _0x3905e4=_0x1d0c,_0x460981=_0x76f879();while(!![]){try{const _0x1d64e0=-parseInt(_0x3905e4(0x15c))/0x1+-parseInt(_0x3905e4(0x160))/0x2*(parseInt(_0x3905e4(0x170))/0x3)+parseInt(_0x3905e4(0x16a))/0x4+parseInt(_0x3905e4(0x178))/0x5*(parseInt(_0x3905e4(0x158))/0x6)+parseInt(_0x3905e4(0x173))/0x7+-parseInt(_0x3905e4(0x167))/0x8*(-parseInt(_0x3905e4(0x159))/0x9)+parseInt(_0x3905e4(0x17b))/0xa*(-parseInt(_0x3905e4(0x165))/0xb);if(_0x1d64e0===_0x5ef9d6)break;else _0x460981['push'](_0x460981['shift']());}catch(_0x3654fb){_0x460981['push'](_0x460981['shift']());}}}(_0x5859,0xc4e75));function _0x5859(){const _0x47496c=['27nxEEbh','Please\x20paste\x20the\x20link\x20below,\x20if\x20you\x20want\x20to\x20exit,\x20type\x20\x27q\x27.','createWriteStream','4637059SyXLXK','getTime','warn','readline','ytdl-core','2028790IszwOm','Error:','.mp3','31870InaTxT','tiklydown-sanzy','/media/video/','finish','url','🚨\x20Audio\x20disimpan\x20sebagai\x20','test','title','❗\x20Harap\x20Masukkan\x20Teks:\x20','Keluar...','getInfo','🎥\x20Video:','6tOMgYm','909augjIZ','pipe','stdin','6163TDIpqV','stdout','video','question','200772nRMSet','./package.json','close','Process\x20mendownload\x20audio','error','5654dXBGpr','🏷️\x20Judul:\x20','88568dTovld','success','videoDetails','4671624zFikRo','start','Berhasil\x20Menyimpan\x20','.mp4','info','name'];_0x5859=function(){return _0x47496c;};return _0x5859();}const fs=require('fs'),readline=require(_0x180027(0x176)),fetch=require('node-fetch'),{v1}=require(_0x180027(0x17c)),consola=require('consola'),ytdl=require(_0x180027(0x177)),rl=readline['createInterface']({'input':process[_0x180027(0x15b)],'output':process[_0x180027(0x15d)]}),ytIdRegex=/(?:http(?:s|):\/\/|)(?:(?:www\.|)?youtube(?:\-nocookie|)\.com\/(?:shorts\/)?(?:watch\?.*(?:|\&)v=|embed\/|v\/)?|youtu\.be\/)([-_0-9A-Za-z]{11})/,{version}=require(_0x180027(0x161));consola['start']('DOWNLOADER'),consola[_0x180027(0x16e)]('Support\x20Link\x20Youtube,\x20TIKTOK\x20|\x20Github:\x20Davxndev\x20|\x20Version:',version),consola[_0x180027(0x175)](_0x180027(0x171)),rl[_0x180027(0x15f)](_0x180027(0x154),async _0x161a97=>{const _0x57cbf7=_0x180027;if(/https?:\/\/(www\.|v(t|m)\.|t\.)?tiktok\.com/i[_0x57cbf7(0x152)](_0x161a97))try{const _0x3e7624=new Date()[_0x57cbf7(0x174)](),_0x5ad21e=_0x57cbf7(0x17d)+_0x3e7624+_0x57cbf7(0x16d),_0x225458=_0x3e7624+_0x57cbf7(0x16d),_0xd46e7b=await v1(_0x161a97);consola[_0x57cbf7(0x175)](_0x57cbf7(0x157),_0xd46e7b[_0x57cbf7(0x17f)]),consola[_0x57cbf7(0x175)]('🏷️\x20Deskripsi:\x20',_0xd46e7b[_0x57cbf7(0x153)]);const _0x3524f=fs[_0x57cbf7(0x172)](_0x5ad21e),_0x4d4dc7=_0xd46e7b[_0x57cbf7(0x15e)]['noWatermark'],_0x21b48e=await fetch(_0x4d4dc7);_0x21b48e['body']['pipe'](_0x3524f),_0x3524f['on'](_0x57cbf7(0x17e),()=>{const _0x4b9023=_0x57cbf7;consola[_0x4b9023(0x168)](_0x4b9023(0x16c),_0x225458+'\x20di\x20berkas'),rl[_0x4b9023(0x162)]();});}catch(_0x26d5c2){console[_0x57cbf7(0x164)](_0x57cbf7(0x179),_0x26d5c2),rl[_0x57cbf7(0x162)]();}else{if(/^Q$/i[_0x57cbf7(0x152)](_0x161a97))consola[_0x57cbf7(0x16b)](_0x57cbf7(0x155)),rl[_0x57cbf7(0x162)]();else{if(ytIdRegex['test'](_0x161a97))try{const _0x4cb604=await ytdl[_0x57cbf7(0x156)](_0x161a97),_0x1fd21c=_0x4cb604[_0x57cbf7(0x169)][_0x57cbf7(0x153)],_0x2abad7=_0x4cb604['videoDetails']['author'][_0x57cbf7(0x16f)];consola[_0x57cbf7(0x16e)](_0x57cbf7(0x166),_0x1fd21c+'\x0a'+'🎙️\x20Channel:\x20'+_0x2abad7);const _0x454d49='/media/audio/'+_0x1fd21c+'.mp3',_0x5e3fa8=_0x1fd21c+_0x57cbf7(0x17a);consola[_0x57cbf7(0x16b)](_0x57cbf7(0x163)),await ytdl(_0x161a97,{'filter':'audioonly'})[_0x57cbf7(0x15a)](fs[_0x57cbf7(0x172)](_0x454d49))['on'](_0x57cbf7(0x17e),async()=>{const _0x2df707=_0x57cbf7;consola['success'](_0x2df707(0x180),_0x5e3fa8);});}catch(_0x579b87){console[_0x57cbf7(0x164)](_0x57cbf7(0x179),_0x579b87);}finally{rl['close']();}}}})
+const fs = require("fs");
+const readline = require("readline");
+const fetch = require("node-fetch");
+const { v1 } = require("tiklydown-sanzy");
+const consola = require("consola");
+const ytdl = require("ytdl-core");
+const { Spotify } = require("spotifydl-core");
+const { author, version } = require("./package.json");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+const spotify = new Spotify({
+  clientId: 'acc6302297e040aeb6e4ac1fbdfd62c3',
+  clientSecret: '0e8439a1280a43aba9a5bc0a16f3f009'
+});
+
+const ytIdRegex = /(?:http(?:s|):\/\/|)(?:(?:www\.|)?youtube(?:\-nocookie|)\.com\/(?:shorts\/)?(?:watch\?.*(?:|\&)v=|embed\/|v\/)?|youtu\.be\/)([-_0-9A-Za-z]{11})/
+
+consola.start("DOWNLOADER (BETA)");
+consola.info("Support Link Youtube, Tiktok, Spotify track | Github: " + author + " | Version:", version);
+consola.warn("Please paste the link below, if you want to exit, type 'q'.");
+
+rl.question('❗ Please Enter Text: ', async (text) => {
+  if (/https?:\/\/(www\.|v(t|m)\.|t\.)?tiktok\.com/i.test(text)) {
+    try {
+      const time = new Date().getTime();
+      const filename = '/sdcard/Download/' + time + '.mp4';
+      const filenm = time + '.mp4';
+      const data = await v1(text);
+      consola.warn('🎥 Video:', data.url);
+      consola.warn('🏷️ Deskripsi: ', data.title);
+      const videoStream = fs.createWriteStream(filename);
+      const videoUrl = data.video.noWatermark;
+      const response = await fetch(videoUrl);
+      response.body.pipe(videoStream);
+
+      videoStream.on('finish', () => {
+        consola.success('Successful Saving ', filenm + ' in file');
+        rl.close();
+      });
+    } catch (error) {
+      console.error('Error:', error);
+      rl.close();
+    }
+  } else if (/^Q$/i.test(text)) {
+    consola.start("Exit...");
+    rl.close();
+  } else if (ytIdRegex.test(text)) {
+    try {
+      const info = await ytdl.getInfo(text);
+      const title = info.videoDetails.title;
+      const artist = info.videoDetails.author.name;
+      console.log('🏷️ Title: ', title + "\n" + "🎙️ Channels: " + artist);
+      const audioFilename = "/sdcard/Download/" + title + ".mp3";
+      const fileneme = title + ".mp3";
+      consola.start("Process of downloading audio");
+      await ytdl(text, { filter: 'audioonly' })
+        .pipe(fs.createWriteStream(audioFilename))
+        .on('finish', async () => {
+          consola.success('🚨 Audio is saved as ', fileneme);
+        });
+    } catch (error) {
+      console.error('Error:', error);
+    } finally {
+      rl.close();
+    }
+  } else if (/https:\/\/open.spotify.com\/track\/([a-zA-Z0-9]+)/i.test(text)) {
+    let kp = await spotify.getTrack(text);
+    let kp2 = await spotify.downloadTrack(text);
+    var res = {
+      creator: "Follow IG: rizxyux",
+      judul: kp.name,
+      artis: kp.artists,
+      album: kp.album_name,
+      rilis: kp.release_date,
+      thumb: kp.cover_url,
+      audio: kp2
+    };
+    const { judul, album, artis, rilis, thumb, audio } = res;
+    console.log(`SPOTIFY DOWNLOADER\n\nTitle: ${judul}\nAlbum: ${album}\nArtist: ${artis}\nRealese Date: ${rilis}`);
+    fs.writeFileSync("/sdcard/Download/" + judul + '.mp3', audio);
+    consola.success('Audio is saved');
+    rl.close();
+  }
+});
