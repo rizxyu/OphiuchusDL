@@ -28,10 +28,10 @@ Audio:
 - [x] Tiktok Video
 - [x] Youtube Audio
      - [ ] Cover album and Artist title
-- [ ] Spotify Audio
+- [x] Spotify Audio
 
 Video:
-- [ ] Youtube Video
+- [ ] Youtube Video ( coming soon )
 - [ ] Twitter Video
 - [ ] Facebook Video
 
