@@ -3,6 +3,8 @@
 
 Youtube Audio Downloader &amp; Tiktok Video Downloader On JavaScript 
 
+> if there is an error, please send input on the issue (i will fix asap)
+
 ## How to install ##
 ```bash
 git clone https://github.com/carlxjoe/OphiuchusDL.git
@@ -11,20 +13,24 @@ npm install
 node index
 ```
 
+## Where i can run script?
+<p>You can use it on Termux, and other software
+</p>
 
 <details><summary>where to save?</summary>
 <h4>The file will be saved in 'media > audio or in video' <a href="https://github.com/carlxjoe/OphiuchusDL/tree/main/media">Here</a></h4>
 </details>
 
 ## What features are supported?
-<h2>Here are some features that can be used at this time: </h2>
+<p>Here are some features that can be used at this time</p>
 
 
 - [x] Tiktok Video
 - [x] Youtube Audio
+     - [ ] Cover album and Artist title
 - [ ] Youtube Video
 - [ ] Twitter Video
-- [x] Facebook Video
+- [ ] Facebook Video
 
 ## display screenshot
-(None)
+<details><summary>Here display</summary><img src="https://raw.githubusercontent.com/rizxyu/OphiuchusDL/main/media/Screenshot_2023-08-25-16-09-56-398_com.termux-edit.jpg"></details>
