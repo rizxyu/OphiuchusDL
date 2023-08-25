@@ -2,7 +2,7 @@
   "name": "ophiuchusdl",
   "version": "0.0.1",
   "license": "GPL-3.0-or-later",
-  "Author": "Davian",
+  "Author": "Rizky",
   "dependencies": {
     "chalk": "^5.3.0",
     "fs": "^0.0.1-security",
