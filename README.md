@@ -24,10 +24,13 @@ node index
 ## What features are supported?
 <p>Here are some features that can be used at this time</p>
 
-
+Audio:
 - [x] Tiktok Video
 - [x] Youtube Audio
      - [ ] Cover album and Artist title
+- [ ] Spotify Audio
+
+Video:
 - [ ] Youtube Video
 - [ ] Twitter Video
 - [ ] Facebook Video
