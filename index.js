@@ -90,7 +90,7 @@ rl.question('❗ Please Enter Text: ', async (text) => {
     };
     const { judul, album, artis, rilis, thumb, audio } = res;
     console.log(`SPOTIFY DOWNLOADER\n\nTitle: ${judul}\nAlbum: ${album}\nArtist: ${artis}\nRealese Date: ${rilis}`);
-    fs.writeFileSync("/sdcard/Download/" + judul + '.mp3', audio);
+    fs.writeFileSync("/media/audio/" + judul + '.mp3', audio);
     consola.success('Audio is saved');
     rl.close();
   } else if(/https?:\/\/(fb\.watch|(www\.|web\.|m\.)?facebook\.com)/i.test(text)) {
