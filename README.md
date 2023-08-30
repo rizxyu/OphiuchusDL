@@ -20,6 +20,9 @@ const filename = '/disk/location/' + time + '.mp4';
 const filenamejpg = '/disk/location/' + time + '_image' + i + '.jpg';
 //Yt audio
 const audioFilename = "/disk/location/" + title + ".mp3";
+//Spotify
+fs.writeFileSync("/disk/location/" + judul + '.mp3', audio);
+   
 ```
 ## Where i can run script?
 <p>You can use it on Termux, and other software
@@ -41,7 +44,7 @@ Audio:
 
 Video:
 - [ ] Youtube Video ( coming soon )
-- [ ] Twitter Video
+- [ ] Twitter Video ( coming soon )
 - [x] Facebook Video (Eror)
 
 ## display screenshot
