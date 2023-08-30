@@ -27,7 +27,7 @@ consola.warn("Please paste the link below, if you want to exit, type 'q'.");
 rl.question('❗ Please Enter Text: ', async (text) => {
   if (/https?:\/\/(www\.|v(t|m)\.|t\.)?tiktok\.com/i.test(text)) {
       const time = new Date().getTime();
-      const filename = '/sdcard/Download/' + time + '.mp4';
+      const filename = '/media/video/' + time + '.mp4';
       const filenm = time + '.mp4';
       const data = await v1(text).catch(async _ => await v2(text))
       consola.warn('🎥 Video:', data.url);
@@ -35,7 +35,7 @@ rl.question('❗ Please Enter Text: ', async (text) => {
       try {
       for (let i = 0; i < data.images.length; i++) {
         const imageUrl = data.images[i].url;
-        const filenamejpg = '/sdcard/Download/' + time + '_image' + i + '.jpg';
+        const filenamejpg = '/media/video/' + time + '_image' + i + '.jpg';
         const rsp = await fetch(imageUrl);
         const buffer = await rsp.buffer();
         fs.writeFileSync(filenamejpg, buffer);
@@ -63,7 +63,7 @@ rl.question('❗ Please Enter Text: ', async (text) => {
       const title = info.videoDetails.title;
       const artist = info.videoDetails.author.name;
       console.log('🏷️ Title: ', title + "\n" + "🎙️ Channels: " + artist);
-      const audioFilename = "/sdcard/Download/" + title + ".mp3";
+      const audioFilename = "/media/audio/" + title + ".mp3";
       const fileneme = title + ".mp3";
       consola.start("Process of downloading audio");
       await ytdl(text, { filter: 'audioonly' })
