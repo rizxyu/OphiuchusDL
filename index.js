@@ -1,7 +1,7 @@
 const fs = require("fs");
 const readline = require("readline");
 const fetch = require("node-fetch");
-const { v1 } = require("tiklydown-sanzy");
+const { v1,v2 } = require("tiklydown-sanzy");
 const consola = require("consola");
 const ytdl = require("ytdl-core");
 const { Spotify } = require("spotifydl-core");
@@ -21,18 +21,28 @@ const spotify = new Spotify({
 const ytIdRegex = /(?:http(?:s|):\/\/|)(?:(?:www\.|)?youtube(?:\-nocookie|)\.com\/(?:shorts\/)?(?:watch\?.*(?:|\&)v=|embed\/|v\/)?|youtu\.be\/)([-_0-9A-Za-z]{11})/
 
 consola.start("DOWNLOADER (BETA)");
-consola.info("Support Link Youtube, Tiktok, Spotify track | Github: " + author + " | Version:", version);
+consola.info("Support Link Youtube, Tiktok (Slide/Video), Spotify track | Github: " + author + " | Version:", version);
 consola.warn("Please paste the link below, if you want to exit, type 'q'.");
 
 rl.question('❗ Please Enter Text: ', async (text) => {
   if (/https?:\/\/(www\.|v(t|m)\.|t\.)?tiktok\.com/i.test(text)) {
-    try {
       const time = new Date().getTime();
       const filename = '/sdcard/Download/' + time + '.mp4';
       const filenm = time + '.mp4';
-      const data = await v1(text);
+      const data = await v1(text).catch(async _ => await v2(text))
       consola.warn('🎥 Video:', data.url);
       consola.warn('🏷️ Deskripsi: ', data.title);
+      try {
+      for (let i = 0; i < data.images.length; i++) {
+        const imageUrl = data.images[i].url;
+        const filenamejpg = '/sdcard/Download/' + time + '_image' + i + '.jpg';
+        const rsp = await fetch(imageUrl);
+        const buffer = await rsp.buffer();
+        fs.writeFileSync(filenamejpg, buffer);
+      } 
+      console.log("Done save img")
+      } catch (error) {
+      console.log("Loading..")
       const videoStream = fs.createWriteStream(filename);
       const videoUrl = data.video.noWatermark;
       const response = await fetch(videoUrl);
@@ -42,8 +52,6 @@ rl.question('❗ Please Enter Text: ', async (text) => {
         consola.success('Successful Saving ', filenm + ' in file');
         rl.close();
       });
-    } catch (error) {
-      console.error('Error:', error);
       rl.close();
     }
   } else if (/^Q$/i.test(text)) {
