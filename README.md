@@ -17,9 +17,9 @@ node index
 //Tiktok video
 const filename = '/disk/location/' + time + '.mp4';
 //tiktok slide
-const filenamejpg = '/sdcard/Download/' + time + '_image' + i + '.jpg';
+const filenamejpg = '/disk/location/' + time + '_image' + i + '.jpg';
 //Yt audio
-const audioFilename = "/sdcard/Download/" + title + ".mp3";
+const audioFilename = "/disk/location/" + title + ".mp3";
 ```
 ## Where i can run script?
 <p>You can use it on Termux, and other software
