@@ -5,6 +5,7 @@ Youtube Audio Downloader &amp; Tiktok Video Downloader On JavaScript
 
 > if there is an error, please send input on the issue (i will fix asap)
 
+## TIKTOK ONLY CLICK > [Tiktok Only](https://github.com/rizxyu/OphiuchusDL/tree/Tiktok-Only)
 ## How to install##
 ```bash
 git clone https://github.com/carlxjoe/OphiuchusDL.git
@@ -40,7 +41,7 @@ Audio:
      - [x] Support slide image
 - [x] Youtube Audio
      - [ ] Cover album and Artist title
-- [x] Spotify Audio
+- [x] Spotify Audio ( UPDATE SOON... )
 
 Video:
 - [ ] Youtube Video ( coming soon )
