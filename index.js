@@ -1,5 +1,4 @@
 const fetch = require("node-fetch")
-const axios = require("axios")
 const readline = require("readline");
 const fs = require("fs")
 
